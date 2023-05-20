@@ -34,7 +34,7 @@ export default function Detail() {
 			`}
 		>
 			{loading ? (
-				<LoopCircleLoading />
+				<LoopCircleLoading size="large" color="black" />
 			) : (
 				<div
 					className={css`
@@ -80,7 +80,7 @@ export default function Detail() {
 						<div>
 							<strong>Title</strong>
 							<span>
-								{data.attributes.titles.en_jp ? data.attributes.titles.en : 'Unknown Title'}
+								{data.attributes.titles.en_jp ? data.attributes.titles.en_jp : 'Unknown Title'}
 							</span>
 						</div>
 						<div>
