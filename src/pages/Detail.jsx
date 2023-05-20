@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { getAnime } from '../axios';
 import { LoopCircleLoading } from 'react-loadingg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function Detail() {
 	const { id } = useParams();
