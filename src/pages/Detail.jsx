@@ -15,6 +15,11 @@ export default function Detail() {
 		getAnime(id)
 			.then((res) => {
 				setData(res.data.data);
+				document.title = `${
+					res.data.data.attributes.titles.en_jp
+						? res.data.data.attributes.titles.en_jp
+						: 'Unknown Title'
+				} Detail`;
 				setLoading(false);
 			})
 			.catch((error) => {
